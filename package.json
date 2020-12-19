@@ -1,0 +1,26 @@
+{
+  "name": "vanillaJS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "feelone":"lessc css/index.less css/index.min.css -x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feelonewong/vanillaJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feelonewong/vanillaJS/issues"
+  },
+  "homepage": "https://github.com/feelonewong/vanillaJS#readme",
+  "dependencies": {
+    "bootstrap": "^3.4.1",
+    "jquery": "^3.5.1",
+    "less": "^4.0.0"
+  }
+}
