@@ -28,7 +28,24 @@ for (let i = 0; i < _arr.length; i++) {
     }
 }
 
-console.log(_arr);
 
+/**
+ * 数组去重问题。解决方法：数组塌陷问题
+ * 
+*/
+let ary = [1,2,3,4,4,4,3,1];
+ary.sort( (a,b)=>a-b);
+let str = ary.join("@")+"@";
+let reg = /\(\d+@)\1*/g;
+let arr = [];
+str.replace( reg,(n,m)=>{
+    m = Number( m.slice(0, m.length-1));
+    arr.push(m);
+})
 
+/**
+ * ES6 数组去重
+*/
+let array = [1,2,3,3,2,1];
+array = [...new Set(array)];
 
